@@ -1,4 +1,4 @@
-#include <stuio.h>
+#include <stdio.h>
 /**
  * main -print code using printf
  *
