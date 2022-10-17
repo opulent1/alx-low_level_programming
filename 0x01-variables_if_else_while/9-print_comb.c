@@ -1,21 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Prints all the numbers of base 16 in lowercase.
- *
- * Return: Always 0.
- */
+  * main - Prints a serie of numbers with commas
+  *
+  * Return: Always (Success);
+  */
 int main(void)
 {
-        int num;
-        double letter;
+	int c;
 
-        for (num = 0; num < 10; num++)
-                putchar((num % 10) + '0');
+	for (c = '0'; c <= '9'; c++)
+	{
+		putchar(c);
 
-        for (letter = 'a'; letter <= 'd'; letter++)
-                putchar(letter);
+		if (c != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
+}
